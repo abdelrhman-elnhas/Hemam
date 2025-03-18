@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#414C5E" />
+    <meta name="author" content="Abdelrhman Elnhas" />
+    <meta name="MobileOptimized" content="320" />
+    <meta property="og:title" content="Hemam Elsharq" />
+    <meta property="og:type" content="website" />
+    <title>همم الشرق العقارية</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/projects.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="d-flex justify-content-between">
+      <nav class="navbar navbar-expand-md w-100">
+        <div
+          class="container d-flex align-items-center justify-content-between gap-1"
+        >
+          <div class="header__logo">
+            <img class="navbar-brand" src="images/logo.svg" alt="Logo" />
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#About">
+                  عن الشركة
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="projects.html"
+                  >مشروعاتنا</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="news.html"
+                  >آخر الاخبار</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html"
+                  >تواصل معنا</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <div>
+              <button
+                onclick="window.location.href='inquiry.html'"
+                class="solid-btn header__button"
+              >
+                سجل إهتمامك
+              </button>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="ProjectsHero"
+        class="d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="container d-flex flex-column align-items-center justify-content-center gap-2"
+        >
+          <h3>مشاريعنــــــــــا</h3>
+          <h2>
+            استثمار اليــــــــــــــــــــــــــــــــوم
+            <span class="d-block">
+              مستقبــــــــــــــــــــــــــــــــل الغد!</span
+            >
+          </h2>
+          <p>
+            في همم الشرق العقارية، نقدم لك فرصًا عقارية تجمع بين التصميم العصري،
+            الجودة العالية، والمواقع الاستراتيجية. اختر مشروعك المثالي اليوم!
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section
+        id="AllProjects"
+        class="d-flex justify-content-center align-items-start py-5"
+      >
+        <div
+          class="container d-flex flex-column justify-content-center align-items-start"
+        >
+          <div class="projects__content">
+            <h2 class="projects__heading">
+              همم الشرق العقارية ... <span> تنوع يليق بتطلعاتك!</span>
+            </h2>
+            <p class="projects__description">
+              في همم الشرق العقارية، نقدم مجموعة متنوعة من المشاريع العقارية
+              التي تلبي مختلف الاحتياجات والأذواق، سواء كنت تبحث عن شقة عصرية
+              تجمع بين الراحة والتصميم الذكي، أو فيلا فاخرة توفر لك الخصوصية
+              والرفاهية، أو أرض استثمارية تمنحك حرية التخطيط لمستقبلك.
+            </p>
+          </div>
+
+          <div class="col-12 p-2">
+            <div
+              class="nav-wrapper d-flex align-items-center justify-content-start"
+            >
+              <button class="nav-btn all-tab active">الكل</button>
+              <button class="nav-btn apartments-tab">الشقق</button>
+              <button class="nav-btn villas-tab">الفلل</button>
+              <button class="nav-btn lands-tab">الأراضي</button>
+            </div>
+          </div>
+
+          <section id="all" class="tab">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">شقق جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">شقق جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">فلل جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">فلل جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">أراضي جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">أراضي جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="apartments" class="tab">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">شقق جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">شقق جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">شقق جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="villas" class="tab">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">فلل جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">فلل جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">فلل جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="lands" class="tab">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">أراضي جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">أراضي جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">أراضي جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col my-2">
+                <div class="project__card p-4">
+                  <img
+                    class="project__image"
+                    src="./images/project1.jpg"
+                    alt="Project Image"
+                  />
+                  <div
+                    class="project__card__content d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <p class="project__title">أراضي جوهرة التحلية</p>
+                    <div class="project__details text-end">
+                      <p class="project__price">$90 600</p>
+                      <div class="project__specs">
+                        <ul class="d-flex align-items-center gap-3">
+                          <li>
+                            <span>
+                              <img src="./images/square.svg" alt="" /> </span
+                            >98m<sup>2</sup>
+                          </li>
+                          <li>
+                            <span> <img src="./images/bed.svg" alt="" /> </span
+                            >2
+                          </li>
+
+                          <li>
+                            <span>
+                              <img src="./images/bathtub.svg" alt="" /> </span
+                            >1
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Banner -->
+      <section
+        id="ProjectsBanner"
+        class="d-flex justify-content-start align-items-center"
+      >
+        <div
+          class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <div class="col-12 col-md-6 text-center text-md-end my-2">
+            <p>
+              جريدتنا الالكترونية
+              <span class="d-block"
+                >كن أول من يعلم بآخر المشاريع والأخبار في بريدك</span
+              >
+            </p>
+          </div>
+          <div class="col-12 col-md-6 my-2">
+            <form
+              action=""
+              class="footer__subscription__form me-auto ms-auto ms-md-0"
+            >
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="بريدك الإلكتروني"
+              />
+              <button>اشترك</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- WhyUs Section -->
+      <section
+        id="WhyUs"
+        class="d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="container d-flex align-items-start justify-content-between flex-column py-5"
+        >
+          <p class="sub-heading">الاختيار الذي يصنع الفرق!</p>
+          <h2 class="projects__heading">
+            لماذا همم الشرق العقارية
+            <span class="d-block"
+              >هي خيارك الأفضــــــــــــــــــــــــــل؟</span
+            >
+          </h2>
+
+          <div
+            class="d-flex align-items-center justify-content-between flex-column flex-md-row"
+          >
+            <div class="whyus__video__wrapper col-12 col-md-5">
+              <div class="whyus__video">
+                <iframe
+                  width="342"
+                  height="607"
+                  src="https://www.youtube.com/embed/ZOAxd53zj_c"
+                  title="ستي سكيب الرياض 2024"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="whyus__content col-12 col-md-6">
+              <ul>
+                <li>
+                  <p>الخبرة والمصداقية</p>
+                  <p>
+                    إن الشركة تتمتع بسجل حافل في السوق العقاري، فهذا يعني أنها
+                    تقدم خدمات موثوقة وتعمل بشفافية تامة مع العملاء.
+                  </p>
+                </li>
+                <li>
+                  <p>تنوع المشاريع العقارية</p>
+                  <p>
+                    توفر الشركة مجموعة متنوعة من العقارات مثل الشقق، الفلل،
+                    الأراضي، والعقارات التجارية التي تلبي مختلف احتياجات
+                    العملاء.
+                  </p>
+                </li>
+                <li>
+                  <p>الأسعار التنافسية</p>
+                  <p>
+                    تقدم الشركة أسعارًا تنافسية ومزايا مالية مميزة تجعلها خيارًا
+                    اقتصاديًا ومناسبًا لجميع الميزانيات.
+                  </p>
+                </li>
+                <li>
+                  <p>خدمات ما بعد البيع</p>
+                  <p>
+                    توفر الشركة خدمات دعم ممتازة بعد إتمام عملية البيع، مثل
+                    الصيانة أو الاستشارات العقارية.
+                  </p>
+                </li>
+                <li>
+                  <p>التزام بمعايير الجودة</p>
+                  <p>
+                    تحرص الشركة على تقديم مشاريع بجودة عالية، سواء من حيث البناء
+                    أو التصميم أو الموقع.
+                  </p>
+                </li>
+                <li>
+                  <p>الموقع الاستراتيجي للمشاريع</p>
+                  <p>
+                    غالبًا ما تختار الشركة مواقع مميزة لمشاريعها بالقرب من
+                    الخدمات والمرافق الحيوية.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="Footer">
+      <div class="container">
+        <div class="text-center text-lg-end text-white pt-5">
+          <div class="text-center text-md-end mt-5">
+            <div class="row mt-3">
+              <div
+                class="col-md-3 col-lg-4 col-xl-3 d-flex flex-column align-items-center align-items-md-start justify-content-center mb-4 mb-md-0"
+              >
+                <img
+                  src="./images/logoW.svg"
+                  class="img-fluid"
+                  alt="Hemam Elsharq Logo"
+                />
+                <div class="hero__social__icons d-flex p-0 footer__social mt-3">
+                  <ul
+                    class="d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <li>
+                      <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="links col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6>روابط مفيدة</h6>
+                <p>
+                  <a href="index.html">الرئيسية</a>
+                </p>
+                <p>
+                  <a href="projects.html">مشاريعنا</a>
+                </p>
+                <p>
+                  <a href="news.html">أخر الأخبار</a>
+                </p>
+                <p>
+                  <a href="contact.html">تواصل معنا</a>
+                </p>
+              </div>
+
+              <div class="links col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6>الصفحات القانونية</h6>
+                <p>
+                  <a href="#">سياسة الخصوصية</a>
+                </p>
+                <p>
+                  <a href="#">الشروط و الاحكام</a>
+                </p>
+                <p>
+                  <a href="#">المعلومات القانونية</a>
+                </p>
+              </div>
+
+              <div
+                class="footer__subscription col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"
+              >
+                <h6>جريدتنا الإلكترونية</h6>
+                <p class="">أحصل على آخر المواضيع والأخبار في بريدك</p>
+                <form action="" class="footer__subscription__form">
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="بريدك الإلكتروني"
+                  />
+                  <button>اشترك</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerBottom text-center p-3">
+        <span>همم الشرق العقارية</span>
+        - جميع الحقوق محفوظة 2025
+      </div>
+    </footer>
+
+    <!-- Bootstrap Script File -->
+    <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- FontAwesome Script File -->
+    <script src="assets/FontAwesome/js/all.min.js"></script>
+    <!-- Filter Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".nav-btn");
+        const tabs = document.querySelectorAll(".tab");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", function () {
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+            const targetSection = this.classList[1].replace("-tab", "");
+            tabs.forEach((tab) => tab.classList.remove("active"));
+            document.getElementById(targetSection).classList.add("active");
+          });
+        });
+        document.getElementById("all").classList.add("active");
+      });
+    </script>
+  </body>
+</html>

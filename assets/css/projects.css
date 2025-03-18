@@ -1,0 +1,170 @@
+/* Start Hero Section */
+#ProjectsHero {
+	min-height: calc(100vh - 75px);
+	background: url("../../images/ProjectHeroBg.png") no-repeat center center;
+	background-size: cover;
+}
+
+#ProjectsHero h3 {
+	color: var(--secondary-color);
+	font-size: 26px;
+	font-weight: var(--font-bold);
+}
+
+#ProjectsHero h2 {
+	font-size: 50px;
+	font-weight: var(--font-bold);
+	color: var(--primary-color);
+}
+
+#ProjectsHero p {
+	font-size: 18px;
+	font-weight: var(--font-medium);
+	color: var(--third-color);
+	width: 60%;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	#ProjectsHero h3 {
+		font-size: 20px;
+
+	}
+
+	#ProjectsHero h2 {
+		font-size: 35px;
+
+	}
+
+	#ProjectsHero p {
+		font-size: 18px;
+		width: 90%;
+	}
+}
+
+@media (max-width: 381px) {
+	#ProjectsHero h3 {
+		font-size: 16px;
+	}
+
+	#ProjectsHero h2 {
+		font-size: 23px;
+
+	}
+
+	#ProjectsHero p {
+		font-size: 13px;
+	}
+}
+
+/* End Hero Section */
+
+/* Start Projects Section */
+#AllProjects .projects__heading span {
+	color: var(--secondary-color);
+}
+
+
+.nav-wrapper .nav-btn {
+	background-color: transparent;
+	padding: 10px 15px;
+	font-size: 18px;
+	font-weight: var(--font-medium);
+	color: var(--primary-color);
+	margin: 5px;
+	border-radius: var(--radius-md);
+	-webkit-border-radius: var(--radius-md);
+	-moz-border-radius: var(--radius-md);
+	-ms-border-radius: var(--radius-md);
+	-o-border-radius: var(--radius-md);
+	width: 100px;
+	transition: background-color 0.5s;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-ms-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	border: 2px solid var(--primary-color);
+}
+
+
+.nav-wrapper .nav-btn.active {
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.nav-wrapper .nav-btn:hover {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	border: none
+}
+
+.tab {
+	display: none;
+}
+
+.tab.active {
+	display: block;
+}
+
+
+
+
+/* End Projects Section */
+
+
+/* Start Banner Section */
+#ProjectsBanner {
+	margin-inline: 80px;
+	min-height: 100px;
+
+	.container {
+		background-color: var(--primary-color);
+		height: 100%;
+		border-radius: var(--radius-md);
+		-webkit-border-radius: var(--radius-md);
+		-moz-border-radius: var(--radius-md);
+		-ms-border-radius: var(--radius-md);
+		-o-border-radius: var(--radius-md);
+		padding: 20px 50px;
+	}
+
+	p {
+		color: var(--secondary-color);
+		font-size: 20px;
+		font-weight: var(--font-medium);
+
+		span {
+			font-size: 15px;
+			font-weight: var(--font-regular);
+			color: var(--white);
+		}
+
+	}
+}
+
+@media (max-width : 690px) {
+	#ProjectsBanner {
+		margin-inline: 10px;
+
+		.container {
+			padding: 20px 30px;
+		}
+
+		p {
+			color: var(--secondary-color);
+			font-size: 20px;
+			font-weight: var(--font-medium);
+
+			span {
+				font-size: 15px;
+				font-weight: var(--font-regular);
+				color: var(--white);
+			}
+
+		}
+	}
+
+}
+
+
+/* End Banner Section */
