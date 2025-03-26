@@ -1,0 +1,61 @@
+.news__card {
+  background-color: #eeeeee;
+  box-shadow: 1px 3px 5px #c4c4c4;
+}
+/* Start Hero Section */
+#ProjectsHero {
+  min-height: calc(100vh - 75px);
+  background: url("../../images/ProjectHeroBg.png") no-repeat center center;
+  background-size: cover;
+}
+
+#ProjectsHero h3 {
+  color: var(--secondary-color);
+  font-size: 26px;
+  font-weight: var(--font-bold);
+}
+
+#ProjectsHero h2 {
+  font-size: 50px;
+  font-weight: var(--font-bold);
+  color: var(--primary-color);
+}
+
+#ProjectsHero p {
+  font-size: 18px;
+  font-weight: var(--font-medium);
+  color: var(--third-color);
+  width: 60%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #ProjectsHero h3 {
+    font-size: 20px;
+  }
+
+  #ProjectsHero h2 {
+    font-size: 35px;
+  }
+
+  #ProjectsHero p {
+    font-size: 18px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 381px) {
+  #ProjectsHero h3 {
+    font-size: 16px;
+  }
+
+  #ProjectsHero h2 {
+    font-size: 23px;
+  }
+
+  #ProjectsHero p {
+    font-size: 13px;
+  }
+}
+
+/* End Hero Section */

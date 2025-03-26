@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#414C5E" />
+    <meta name="author" content="Abdelrhman Elnhas" />
+    <meta name="MobileOptimized" content="320" />
+    <meta property="og:title" content="Hemam Elsharq" />
+    <meta property="og:type" content="website" />
+    <title>همم الشرق العقارية</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <!-- Swiper CSS-->
+    <link rel="stylesheet" href="assets/Swiper/swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="d-flex justify-content-between">
+      <nav class="navbar navbar-expand-md w-100">
+        <div
+          class="container d-flex align-items-center justify-content-between gap-1"
+        >
+          <div class="header__logo">
+            <img class="navbar-brand" src="images/logo.svg" alt="Logo" />
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#About">
+                  عن الشركة
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="projects.html"
+                  >مشروعاتنا</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="news.html"
+                  >آخر الاخبار</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html"
+                  >تواصل معنا</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <div>
+              <button
+                onclick="window.location.href='inquiry.html'"
+                class="solid-btn header__button"
+              >
+                سجل إهتمامك
+              </button>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Banner -->
+      <section
+        id="Banner"
+        class="d-flex justify-content-start align-items-center"
+      >
+        <div
+          class="container d-flex flex-column justify-content-start align-items-center align-items-sm-start"
+        >
+          <div class="banner__content">
+            <p>
+              <span>نبني</span>
+              المستقبــــــــــــــــــــــــــــــل
+            </p>
+            <p>
+              نرتقي
+              <span>بالحيــــــــــــــــــــــــــــــــــــــاة</span>
+            </p>
+          </div>
+
+          <button
+            onclick="window.location.href='projects.html'"
+            class="solid-btn banner__button mt-4"
+          >
+            اكتشف مشاريعنا الآن
+            <span><i class="fa-solid fa-arrow-up"></i></span>
+          </button>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <div class="row contactDetail">
+            <div class="col-md-4">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3></h3>
+              <p></p>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-phone"></i>
+              <h3></h3>
+              <p></p>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-envelope"></i>
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="row contact">
+            <div class="col-12">
+              <h2 class="section__title">فريقنا متخصص</h2>
+              <p>نحن في همم</p>
+            </div>
+            <div class="col-12">
+              <form action="">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <input type="text" placeholder="الاسم الاول" />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <input type="text" placeholder="الاسم الاخير" />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <input type="email" placeholder="البريد الالكتروني" />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <input type="text" placeholder="رقم الجوال" />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="الرسالة"
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="solid-btn contact__button">
+                      ارسل
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="map">
+            <iframe></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="Footer">
+      <div class="container">
+        <div class="text-center text-lg-end text-white pt-5">
+          <div class="text-center text-md-end mt-5">
+            <div class="row mt-3">
+              <div
+                class="col-md-3 col-lg-4 col-xl-3 d-flex flex-column align-items-center align-items-md-start justify-content-center mb-4 mb-md-0"
+              >
+                <img
+                  src="./images/logoW.svg"
+                  class="img-fluid"
+                  alt="Hemam Elsharq Logo"
+                />
+                <div class="hero__social__icons d-flex p-0 footer__social mt-3">
+                  <ul
+                    class="d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <li>
+                      <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="links col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6>روابط مفيدة</h6>
+                <p>
+                  <a href="index.html">الرئيسية</a>
+                </p>
+                <p>
+                  <a href="projects.html">مشاريعنا</a>
+                </p>
+                <p>
+                  <a href="news.html">أخر الأخبار</a>
+                </p>
+                <p>
+                  <a href="contact.html">تواصل معنا</a>
+                </p>
+              </div>
+
+              <div class="links col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6>الصفحات القانونية</h6>
+                <p>
+                  <a href="#">سياسة الخصوصية</a>
+                </p>
+                <p>
+                  <a href="#">الشروط و الاحكام</a>
+                </p>
+                <p>
+                  <a href="#">المعلومات القانونية</a>
+                </p>
+              </div>
+
+              <div
+                class="footer__subscription col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"
+              >
+                <h6>جريدتنا الإلكترونية</h6>
+                <p class="">أحصل على آخر المواضيع والأخبار في بريدك</p>
+                <form action="" class="footer__subscription__form">
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="بريدك الإلكتروني"
+                  />
+                  <button>اشترك</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerBottom text-center p-3">
+        <span>همم الشرق العقارية</span>
+        - جميع الحقوق محفوظة 2025
+      </div>
+    </footer>
+
+    <!-- Bootstrap Script File -->
+    <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- FontAwesome Script File -->
+    <script src="assets/FontAwesome/js/all.min.js"></script>
+    <!-- Script File -->
+    <script src="assets/js/app.js"></script>
+    <!-- Swiper JS -->
+    <script src="./assets/Swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        slidesPerGroup: 3,
+        loop: false,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1000: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
