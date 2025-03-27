@@ -1,0 +1,355 @@
+/* Start Project Details Hero Section */
+
+#ProjectDetailsHero {
+	min-height: 100dvh;
+	position: relative;
+
+	img.project__image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		inset: 0;
+		z-index: 0;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(0deg, #fff 0%, rgba(254, 254, 254, 0.738) 54.76%, rgba(255, 255, 255, 0.118) 99.66%);
+		z-index: 1;
+	}
+
+	.container {
+		z-index: 3;
+
+		h2,
+		h3 {
+			font-weight: var(--font-bold);
+		}
+
+		h3 {
+			font-size: 36px;
+			color: var(--secondary-color);
+		}
+
+		h2 {
+			font-size: 56px;
+			color: var(--primary-color);
+		}
+
+		@media (max-width: 500px) {
+			h3 {
+				font-size: 25px;
+			}
+
+			h2 {
+				font-size: 35px;
+			}
+		}
+
+		@media (max-width: 300px) {
+			h3 {
+				font-size: 20px;
+			}
+
+			h2 {
+				font-size: 29px;
+			}
+		}
+	}
+}
+
+/* End Project Details Hero Section */
+
+/* Start Project Specs Section */
+
+#ProjectDetailsSpecs {
+	color: var(--third-color);
+	font-size: 16px;
+	font-weight: var(--font-regular);
+
+}
+
+.project__info__item {
+	font-weight: var(--font-medium);
+	color: var(--primary-color);
+	font-size: 26px;
+
+	span {
+		font-size: 16px;
+	}
+}
+
+.project__info,
+.project__info__ctas {
+	max-width: 400px;
+}
+
+.project__info__ctas a,
+.project__info__ctas button {
+	height: 50px;
+	font-size: 15px;
+	font-weight: var(--font-bold);
+	max-width: 400px;
+}
+
+.project__info__ctas a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.cta-item:first-child {
+	flex: 0 0 100%;
+	background-color: var(--primary-color);
+
+	&:hover {
+		background-color: var(--secondary-color);
+	}
+}
+
+.cta-item:not(:first-child) {
+	flex: 0 0 calc(50% - 0.25rem);
+}
+
+
+@media (max-width: 991px) {
+	.project__info__item {
+		span {
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+
+	.project__info__item {
+		font-size: 22px;
+
+		span {
+			font-size: 12px;
+		}
+	}
+
+	.project__info__ctas a,
+	.project__info__ctas button {
+		height: 50px;
+		font-size: 12px;
+		font-weight: var(--font-bold);
+		max-width: 400px;
+	}
+}
+
+/* End Project Specs Section */
+
+/* Start Project Gallery Section */
+
+#ProjectGallery {
+	min-height: 100vh;
+
+	h3 {
+		color: var(--primary-color);
+		font-size: 30px;
+		font-weight: var(--font-bold);
+	}
+}
+
+.gallery__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 10px 10px;
+	margin-bottom: 20px;
+}
+
+.gallery__grid__item {
+	max-width: 620px;
+	border-radius: var(--radius-md);
+	-webkit-border-radius: var(--radius-md);
+	-moz-border-radius: var(--radius-md);
+	-ms-border-radius: var(--radius-md);
+	-o-border-radius: var(--radius-md);
+	overflow: hidden;
+	box-shadow: var(--box-shadow);
+	-webkit-box-shadow: var(--box-shadow);
+	-moz-box-shadow: var(--box-shadow);
+	-ms-box-shadow: var(--box-shadow);
+	-o-box-shadow: var(--box-shadow);
+	cursor: pointer;
+
+	img {
+		width: 103%;
+		height: 101%;
+		object-fit: cover;
+	}
+}
+
+.gallery__grid__item:nth-child(1) {
+	grid-area: 1 / 1 / 3 / 2;
+}
+
+.gallery__grid__item:nth-child(2) {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.gallery__grid__item:nth-child(3) {
+	grid-area: 1 / 2 / 2 / 3;
+
+
+}
+
+@media (max-width: 380px) {
+	.gallery__grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		margin-bottom: 20px;
+	}
+
+	.gallery__grid__item:nth-child(1) {
+		grid-area: 1 / 1 / 2 / 2;
+	}
+
+	.gallery__grid__item:nth-child(2) {
+		grid-area: 2 / 1 / 3 / 2;
+	}
+
+	.gallery__grid__item:nth-child(3) {
+		grid-area: 3 / 1 / 4 / 2;
+	}
+
+	.gallery__grid__item {
+		img {
+			object-fit: fill;
+		}
+	}
+
+}
+
+/* End Project Gallery Section */
+
+/* Start Inquiry Section */
+
+#Inquiry {
+	min-height: 100vh;
+}
+
+.main-container {
+	background-color: var(--primary-color);
+	border-radius: var(--radius-md);
+	color: white;
+	padding: 20px;
+	max-width: 1000px;
+	margin: 30px auto;
+	-webkit-border-radius: var(--radius-md);
+	-moz-border-radius: var(--radius-md);
+	-ms-border-radius: var(--radius-md);
+	-o-border-radius: var(--radius-md);
+
+	@media (max-width: 576px) {
+		padding: 20px 0;
+	}
+}
+
+.form-container {
+	background-color: white;
+	border-radius: var(--radius-md);
+	padding: 20px;
+	color: var(--primary-color);
+	-webkit-border-radius: var(--radius-md);
+	-moz-border-radius: var(--radius-md);
+	-ms-border-radius: var(--radius-md);
+	-o-border-radius: var(--radius-md);
+
+}
+
+.form-control {
+	border-radius: var(--radius-md);
+	margin-bottom: 15px;
+	text-align: start;
+	-webkit-border-radius: var(--radius-md);
+	-moz-border-radius: var(--radius-md);
+	-ms-border-radius: var(--radius-md);
+	-o-border-radius: var(--radius-md);
+	border: 1px solid var(--secondary-color);
+
+	&:focus-visible,
+	&:focus {
+		box-shadow: 0 0 0 .15rem #b196695c;
+		border-color: var(--secondary-color);
+		outline: none;
+	}
+
+		{
+		box-shadow: 0 0 0 .15rem #b196695c;
+		border-color: var(--secondary-color);
+	}
+}
+
+.form-control::placeholder {
+	color: var(--secondary-color);
+	text-align: start;
+}
+
+textarea.form-control {
+	height: 120px;
+	resize: none;
+}
+
+.form-check-input {
+	float: unset !important;
+	margin-left: unset !important;
+	width: 15px;
+	aspect-ratio: 1;
+
+}
+
+.submit-btn {
+	background-color: var(--primary-color);
+	color: var(--white);
+	height: 50px;
+	width: 50%;
+
+	@media (max-width: 576px) {
+		width: 100%;
+	}
+}
+
+.spec-item {
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 15px;
+	width: 50%;
+	min-width: 157px;
+}
+
+.spec-icon {
+	margin-left: 10px;
+	width: 20px;
+	text-align: center;
+}
+
+.map-container {
+	border-radius: var(--radius-md);
+	overflow: hidden;
+	height: 200px;
+	-webkit-border-radius: var(--radius-md);
+	-moz-border-radius: var(--radius-md);
+	-ms-border-radius: var(--radius-md);
+	-o-border-radius: var(--radius-md);
+}
+
+.section-title {
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+/* End Inquiry Section */

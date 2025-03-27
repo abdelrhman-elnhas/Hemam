@@ -37,6 +37,7 @@ html {
 body {
 	padding: 0;
 	margin: 0;
+	position: relative;
 }
 
 body {
@@ -156,7 +157,13 @@ p {
 header {
 	height: 70px;
 	margin-top: 5px;
-	z-index: 5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: transparent;
+
 }
 
 .header__logo img {
@@ -237,7 +244,7 @@ header .nav-item>.nav-link {
 /* Start Hero Settings */
 
 #Hero {
-	min-height: calc(100vh - 75px);
+	min-height: 100dvh;
 
 	&::after {
 		position: absolute;
@@ -716,6 +723,7 @@ header .nav-item>.nav-link {
 	-ms-border-radius: var(--radius-md);
 	-o-border-radius: var(--radius-md);
 	overflow: hidden;
+	cursor: pointer;
 
 	.project__image {
 		position: absolute;

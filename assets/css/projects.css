@@ -1,6 +1,6 @@
 /* Start Hero Section */
 #ProjectsHero {
-	min-height: calc(100vh - 75px);
+	min-height: 100dvh;
 	background: url("../../images/ProjectHeroBg.png") no-repeat center center;
 	background-size: cover;
 }
