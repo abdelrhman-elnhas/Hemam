@@ -23,6 +23,8 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/inquiry.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./assets/Wow/css/animate.css" />
   </head>
 
   <body>
@@ -252,6 +254,18 @@
         });
         document.getElementById("all").classList.add("active");
       });
+    </script>
+    <!-- WOW JS -->
+    <script src="./assets/Wow/js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true, // default
+      });
+      wow.init();
     </script>
   </body>
 </html>
