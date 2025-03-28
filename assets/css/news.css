@@ -4,15 +4,17 @@
 }
 /* Start Hero Section */
 #ProjectsHero {
-  min-height: calc(100vh - 75px);
-  background: url("../../images/ProjectHeroBg.png") no-repeat center center;
+  min-height: 100vh;
+  background: url("../../images/news.jpg") no-repeat center center;
   background-size: cover;
+  background-position: center;
 }
 
 #ProjectsHero h3 {
   color: var(--secondary-color);
-  font-size: 26px;
-  font-weight: var(--font-bold);
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 
 #ProjectsHero h2 {

@@ -1,4 +1,15 @@
-.news__card {
+#newsdetails {
+  margin-top: 100px;
+}
+#newsdetails .news__card {
   background-color: #eeeeee;
   box-shadow: 1px 3px 5px #c4c4c4;
+}
+#newsdetails p#content {
+  color: #414c5e;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: right;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
