@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="assets/css/about.css" />
     <!-- Swiper CSS-->
     <link rel="stylesheet" href="assets/Swiper/swiper-bundle.min.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./assets/Wow/css/animate.css" />
   </head>
 
   <body>
@@ -105,28 +107,40 @@
           <div
             class="col-12 col-md-3 col-lg-2 about__statistics d-flex flex-row-reverse flex-md-column justify-content-between align-items-center"
           >
-            <div class="about__statistics__item">
+            <div
+              class="about__statistics__item wow fadeInDown"
+              data-wow-delay="0.1s"
+            >
               <p
                 class="d-flex flex-column align-items-center justify-content-center"
               >
                 321+<span>العقارات المباعة</span>
               </p>
             </div>
-            <div class="about__statistics__item">
+            <div
+              class="about__statistics__item wow fadeInDown"
+              data-wow-delay="0.3s"
+            >
               <p
                 class="d-flex flex-column align-items-center justify-content-center"
               >
                 15+<span>العمال و الموظفون</span>
               </p>
             </div>
-            <div class="about__statistics__item">
+            <div
+              class="about__statistics__item wow fadeInDown"
+              data-wow-delay="0.5s"
+            >
               <p
                 class="d-flex flex-column align-items-center justify-content-center"
               >
                 19+<span>الجوائز الفائزة</span>
               </p>
             </div>
-            <div class="about__statistics__item">
+            <div
+              class="about__statistics__item wow fadeInDown"
+              data-wow-delay="0.7s"
+            >
               <p
                 class="d-flex flex-column align-items-center justify-content-center"
               >
@@ -138,9 +152,11 @@
           <div
             class="col-12 col-md-8 col-lg-9 d-flex flex-column align-items-start justify-content-evenly about__content"
           >
-            <p class="sub-heading">عن همم الشرق العقارية</p>
-            <h2 class="about__heading">نبني المستقبل، اليوم!</h2>
-            <p class="about__description">
+            <p class="sub-heading wow fadeInDown">عن همم الشرق العقارية</p>
+            <h2 class="about__heading wow fadeInUp" data-wow-delay="0.1s">
+              نبني المستقبل، اليوم!
+            </h2>
+            <p class="about__description wow fadeInUp" data-wow-delay="0.3s">
               نرسم ملامح التطوير العمراني برؤية طموحة، حيث تأسست همم الشرق
               العقارية لتقديم حلول مبتكرة تعزز النمو العقاري والاقتصادي في
               المملكة العربية السعودية، انسجامًا مع رؤية 2030. نطمح للريادة في
@@ -148,7 +164,7 @@
               حدود له.
             </p>
             <ul class="about__list">
-              <li>
+              <li class="wow fadeInUp" data-wow-delay="0.8s">
                 <span><i class="fa-solid fa-eye"></i></span>
                 رؤيـــــــــــــــــــتنا
 
@@ -158,7 +174,7 @@
                   وتنمية الاقتصاد الوطني.
                 </p>
               </li>
-              <li>
+              <li class="wow fadeInUp" data-wow-delay="1s">
                 <span><i class="fa-solid fa-envelope-open"></i></span>
                 رسالتنــــــــــــــا
                 <p>
@@ -180,8 +196,8 @@
         <div
           class="container d-flex flex-column justify-content-start align-items-center align-items-sm-start"
         >
-          <div class="banner__content">
-            <p>
+          <div class="banner__content wow fadeInRight">
+            <p class="">
               <span>نبني</span>
               المستقبــــــــــــــــــــــــــــــل
             </p>
@@ -193,7 +209,8 @@
 
           <button
             onclick="window.location.href='projects.html'"
-            class="solid-btn banner__button mt-4"
+            class="solid-btn banner__button mt-4 wow bounceIn"
+            data-wow-delay="0.3s"
           >
             اكتشف مشاريعنا الآن
             <span><i class="fa-solid fa-arrow-up"></i></span>
@@ -322,6 +339,18 @@
           },
         },
       });
+    </script>
+    <!-- WOW JS -->
+    <script src="./assets/Wow/js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true, // default
+      });
+      wow.init();
     </script>
   </body>
 </html>
