@@ -23,6 +23,8 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/project-details.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./assets/Wow/css/animate.css" />
   </head>
 
   <body>
@@ -104,8 +106,8 @@
         <div
           class="container d-flex flex-column align-items-center justify-content-center gap-2"
         >
-          <h3>مشروع</h3>
-          <h2>فلل جوهرة التحلية</h2>
+          <h3 class="wow fadeInDown">مشروع</h3>
+          <h2 class="wow fadeInUp">فلل جوهرة التحلية</h2>
         </div>
       </section>
 
@@ -118,7 +120,7 @@
           class="container d-flex align-items-start justify-content-between flex-column flex-md-row py-3"
         >
           <div class="col-12 col-md-6 py-2 ps-2">
-            <p class="text-center text-md-end">
+            <p class="text-center text-md-end wow fadeInRight">
               يتميز هذا المشروع بمزيج مثالي من الأناقة والراحة، حيث يجمع بين
               التصاميم العصرية والتشطيبات الفاخرة. من غرف المعيشة الرحبة ذات
               الإضاءة الدافئة والتفاصيل الراقية، إلى الحمامات الفخمة بلمسات
@@ -129,7 +131,7 @@
             </p>
           </div>
           <div
-            class="col-12 col-md-6 py-2 d-flex flex-column align-items-center align-items-md-end justify-content-between"
+            class="col-12 col-md-6 py-2 d-flex flex-column align-items-center align-items-md-end justify-content-between wow fadeInLeft"
           >
             <div
               class="project__info d-flex align-items-center justify-content-between w-100 mb-2"
@@ -169,7 +171,7 @@
         class="d-flex align-items-center justify-content-center"
       >
         <div
-          class="container d-flex flex-column align-items-center justify-content-between gap-3 my-3"
+          class="container d-flex flex-column align-items-center justify-content-between gap-3 my-3 wow fadeInUp"
         >
           <h3 class="text-end ms-auto">معرض الصور</h3>
           <div class="gallery__grid">
@@ -192,7 +194,7 @@
       <!-- Inquiry Section -->
       <section id="Inquiry">
         <div class="container">
-          <div class="main-container">
+          <div class="main-container wow fadeIn" data-wow-delay="0.4s">
             <div class="row">
               <!-- Specifications Section -->
               <div class="col-md-6">
@@ -263,12 +265,12 @@
                   </div>
                 </div>
 
-                <h3 class="text-end mt-4 section-title">الموقع</h3>
+                <h3 class="text-end mt-3 section-title">الموقع</h3>
                 <div class="map-container">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229114.54949266848!2d50.00024161715559!3d26.199448532267468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e839e8ef58d9%3A0xef778812d8b6aad1!2sAl%20Khobar%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1743084448085!5m2!1sen!2seg"
                     width="500"
-                    height="300"
+                    height="270"
                     style="border: 0"
                     allowfullscreen=""
                     loading="lazy"
@@ -428,5 +430,17 @@
     <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
     <!-- FontAwesome Script File -->
     <script src="assets/FontAwesome/js/all.min.js"></script>
+    <!-- WOW JS -->
+    <script src="./assets/Wow/js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true, // default
+      });
+      wow.init();
+    </script>
   </body>
 </html>
