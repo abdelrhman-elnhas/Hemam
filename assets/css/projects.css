@@ -100,12 +100,24 @@
 
 .tab {
 	display: none;
+	width: 100%;
 }
 
 .tab.active {
 	display: block;
 }
 
+
+@media (max-width: 400px) {
+	.nav-wrapper {
+		flex-wrap: wrap;
+
+		.nav-btn {
+			font-size: 14px;
+			width: 80px;
+		}
+	}
+}
 
 
 
